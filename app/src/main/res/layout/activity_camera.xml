@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/mainCameraBtn"
+        style="@style/AppTheme"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="64dp"
+        android:background="#0065b8"
+        android:text="Menu"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/archiveCameraBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/archiveCameraBtn"
+        style="@style/AppTheme"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="32dp"
+        android:background="#0065b8"
+        android:text="Archive"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mainCameraBtn" />
+
+    <Button
+        android:id="@+id/photoCameraBtn"
+        style="@style/AppTheme"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="16dp"
+        android:background="#0065b8"
+        android:text="PHOTO"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/archiveCameraBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recordCameraBtn" />
+
+    <Button
+        android:id="@+id/recordCameraBtn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#b40d15"
+        android:elevation="11dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Record"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/mainCameraBtn"
+        app:layout_constraintEnd_toStartOf="@+id/photoCameraBtn"
+        app:layout_constraintStart_toEndOf="@+id/alarmCameraBtn" />
+
+    <Button
+        android:id="@+id/alarmCameraBtn"
+        style="@style/AppTheme"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginStart="16dp"
+        android:background="#b40d15"
+        android:text="ALARM"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mainCameraBtn"
+        app:layout_constraintEnd_toStartOf="@+id/recordCameraBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="420dp"
+        android:layout_height="54dp"
+        android:background="#0065b8"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/settingsCameraBtn"
+        android:layout_width="80dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="415dp"
+        android:layout_marginEnd="8dp"
+        android:background="#0065b8"
+        android:src="@android:drawable/ic_menu_preferences"
+        app:layout_constraintBottom_toTopOf="@+id/photoCameraBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toEndOf="@+id/divider3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logoutCameraBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="85dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="460dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="8dp"
+        android:background="#0065b8"
+        android:text="Log out"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/alarmCameraBtn"
+        app:layout_constraintEnd_toStartOf="@+id/divider3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+</android.support.constraint.ConstraintLayout>
