@@ -54,27 +54,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/archiveCameraBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/recordCameraBtn" />
-
-    <Button
-        android:id="@+id/recordCameraBtn"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="19dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:background="#b40d15"
-        android:elevation="11dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Record"
-        android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:typeface="monospace"
-        app:layout_constraintBottom_toTopOf="@+id/mainCameraBtn"
-        app:layout_constraintEnd_toStartOf="@+id/photoCameraBtn"
-        app:layout_constraintStart_toEndOf="@+id/alarmCameraBtn" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/alarmCameraBtn"
@@ -89,7 +69,6 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/mainCameraBtn"
-        app:layout_constraintEnd_toStartOf="@+id/recordCameraBtn"
         app:layout_constraintStart_toStartOf="parent" />
 
     <View
