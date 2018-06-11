@@ -18,7 +18,6 @@
         android:text="PROTECT"
         android:textColor="@android:color/background_dark"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/archiveIdleBtn"
         app:layout_constraintEnd_toStartOf="@+id/alarmIdleBtn"
         app:layout_constraintStart_toEndOf="@+id/idleIdleBtn" />
@@ -36,7 +35,6 @@
         android:text="Idle"
         android:textColor="@android:color/background_dark"
         android:textSize="20sp"
-        android:textStyle="bold"
         android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/archiveIdleBtn"
         app:layout_constraintEnd_toStartOf="@+id/protectedIdleBtn"
@@ -55,7 +53,6 @@
         android:text="ALARM"
         android:textColor="@android:color/background_dark"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/archiveIdleBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/protectedIdleBtn" />
@@ -73,7 +70,6 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cameraIdleBtn" />
@@ -91,7 +87,6 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/archiveIdleBtn"
         app:layout_constraintStart_toStartOf="parent" />
@@ -123,7 +118,6 @@
         android:text="Log out"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/mainDivider"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -157,21 +151,18 @@
 
     <TextView
         android:id="@+id/protectTextView"
-        android:layout_width="210dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="229dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:fontFamily="@font/rosarivo"
-        android:text="PROTECTED"
+        android:text="PROTECT"
         android:textSize="45sp"
-        android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/protectedIdleBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.62"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/protectMainView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/idleImageView"
@@ -189,8 +180,8 @@
 
     <TextView
         android:id="@+id/idleTextView"
-        android:layout_width="144dp"
-        android:layout_height="55dp"
+        android:layout_width="116dp"
+        android:layout_height="52dp"
         android:layout_marginBottom="29dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -198,8 +189,7 @@
         android:fontFamily="@font/rosarivo"
         android:text="IDLE"
         android:textSize="45sp"
-        android:textStyle="bold"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/protectedIdleBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -230,7 +220,7 @@
         android:fontFamily="@font/rosarivo"
         android:text="ALARM"
         android:textSize="45sp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/protectedIdleBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
