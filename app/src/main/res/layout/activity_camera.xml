@@ -8,7 +8,7 @@
     tools:layout_editor_absoluteY="81dp">
 
     <Button
-        android:id="@+id/mainCameraBtn"
+        android:id="@+id/refreshCameraBtn"
         style="@style/AppTheme"
         android:layout_width="155dp"
         android:layout_height="60dp"
@@ -17,16 +17,15 @@
         android:layout_marginStart="64dp"
         android:background="@color/colorPrimary"
         android:fontFamily="@font/rosarivo"
-        android:text="MENU"
+        android:text="REFRESH"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/archiveCameraBtn"
+        app:layout_constraintEnd_toStartOf="@+id/saveCameraBtn"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/archiveCameraBtn"
+        android:id="@+id/saveCameraBtn"
         style="@style/AppTheme"
         android:layout_width="155dp"
         android:layout_height="60dp"
@@ -35,49 +34,12 @@
         android:layout_marginStart="32dp"
         android:background="@color/colorPrimary"
         android:fontFamily="@font/rosarivo"
-        android:text="ARCHIVE"
+        android:text="SAVE"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/mainCameraBtn" />
-
-    <Button
-        android:id="@+id/photoCameraBtn"
-        style="@style/AppTheme"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="272dp"
-        android:layout_marginStart="19dp"
-        android:background="@color/colorPrimary"
-        android:fontFamily="@font/rosarivo"
-        android:text="PHOTO"
-        android:textColor="@android:color/background_dark"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/archiveCameraBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/alarmCameraBtn"
-        style="@style/AppTheme"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginStart="272dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="@font/rosarivo"
-        android:text="ALARM"
-        android:textColor="@android:color/background_dark"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/mainCameraBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/refreshCameraBtn" />
 
     <View
         android:id="@+id/divider3"
@@ -91,24 +53,25 @@
 
     <ImageButton
         android:id="@+id/settingsCameraBtn"
-        android:layout_width="80dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="415dp"
+        android:layout_width="65dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="500dp"
         android:layout_marginEnd="8dp"
         android:background="@color/colorPrimaryDark"
         android:src="@android:drawable/ic_menu_preferences"
-        app:layout_constraintBottom_toTopOf="@+id/photoCameraBtn"
+        app:layout_constraintBottom_toTopOf="@+id/saveCameraBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/divider3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/logoutCameraBtn"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="104dp"
+        android:layout_width="98dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="460dp"
+        android:layout_marginBottom="500dp"
         android:layout_marginEnd="7dp"
         android:layout_marginStart="8dp"
         android:background="@color/colorPrimary"
@@ -116,11 +79,11 @@
         android:text="Log out"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/alarmCameraBtn"
+        app:layout_constraintBottom_toTopOf="@+id/refreshCameraBtn"
         app:layout_constraintEnd_toStartOf="@+id/divider3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>

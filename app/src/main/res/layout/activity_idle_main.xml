@@ -138,9 +138,9 @@
 
     <ImageView
         android:id="@+id/protectMainView"
-        android:layout_width="wrap_content"
-        android:layout_height="284dp"
-        android:layout_marginBottom="72dp"
+        android:layout_width="0dp"
+        android:layout_height="304dp"
+        android:layout_marginBottom="78dp"
         android:src="@drawable/claudius001"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/protectedIdleBtn"
@@ -153,22 +153,25 @@
         android:id="@+id/protectTextView"
         android:layout_width="229dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="19dp"
         android:fontFamily="@font/rosarivo"
         android:text="PROTECT"
         android:textSize="45sp"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/protectedIdleBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/protectMainView" />
 
     <ImageView
         android:id="@+id/idleImageView"
         android:layout_width="wrap_content"
         android:layout_height="354dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="78dp"
         android:layout_marginEnd="411dp"
         android:layout_marginStart="411dp"
         android:src="@drawable/claudius002"
@@ -181,7 +184,7 @@
     <TextView
         android:id="@+id/idleTextView"
         android:layout_width="116dp"
-        android:layout_height="52dp"
+        android:layout_height="58dp"
         android:layout_marginBottom="29dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -192,6 +195,7 @@
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/protectedIdleBtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idleImageView"
         app:layout_constraintVertical_bias="0.983" />
@@ -200,19 +204,18 @@
         android:id="@+id/alarmImageView"
         android:layout_width="wrap_content"
         android:layout_height="324dp"
-        android:layout_marginBottom="86dp"
+        android:layout_marginBottom="126dp"
+        android:layout_marginEnd="1dp"
         android:src="@drawable/claudius003"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/protectedIdleBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settingsIdleBtn"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/settingsIdleBtn" />
 
     <TextView
         android:id="@+id/alarmTextView"
-        android:layout_width="181dp"
-        android:layout_height="65dp"
+        android:layout_width="174dp"
+        android:layout_height="67dp"
         android:layout_marginBottom="42dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -223,6 +226,7 @@
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/protectedIdleBtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alarmImageView" />
 

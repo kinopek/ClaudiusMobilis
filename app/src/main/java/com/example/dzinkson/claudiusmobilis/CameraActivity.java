@@ -4,7 +4,6 @@ import android.app.Activity;
 //import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.MainThread;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -27,14 +26,7 @@ public class CameraActivity extends Activity {
             }
         });
 
-        Button mainCameraBtn = findViewById(R.id.mainCameraBtn);
-        mainCameraBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), IdleMainActivity.class);
-                startActivity(startIntent);
-            }
-        });
+
 
         ImageButton settingsCameraBtn = findViewById(R.id.settingsCameraBtn);
         settingsCameraBtn.setOnClickListener(new View.OnClickListener() {
